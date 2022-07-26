@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-// INHERITANCE
-public class Sphere : Shape
+public class Cyl : Shape
 {
-    private string _name = "Sphere";
+    private string _name = "Cylinder";
     private TextMeshProUGUI shapeName;
     public GameObject textName;
 
@@ -14,7 +13,7 @@ public class Sphere : Shape
     {
         shapeName = textName.GetComponent<TextMeshProUGUI>();
     }
-   
+
     private void OnMouseEnter()
     {
         // ABSTRACTION
@@ -42,3 +41,4 @@ public class Sphere : Shape
         get { return _name; }
     }
 }
+
